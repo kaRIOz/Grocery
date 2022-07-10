@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Grocery - Bud</title>
+</head>
+<body class="bg-slate-900">
+    
+    <div class="container w-screen mx-auto">
+        <!-- heading -->
+        <div class="flex items-center justify-center space-x-4">
+            <i class="fas fa-shopping-cart text-red-400 text-3xl"></i>
+            <h1 class="text-slate-200 text-3xl font-bold capitalize my-10">grocery - bud</h1>
+        </div>
+
+        <!-- input app -->
+        <div class="myList container w-screen mx-auto px-2 md:max-w-2xl md:px-0 ">
+            <div id="myAlert"></div>
+            <form class="space-y-2 mb-4">
+                <div>
+                    <label for="title" class="block text-xl text-slate-500 mb-1">Title</label>
+                    <input type="text" name="title" id="title" class="bg-transparent focus:outline-none border-2 border-red-400 rounded-xl w-full px-2 py-1 text-slate-200 text-lg tracking-wider">
+                </div>
+                <div>
+                    <label for="description" class="block text-xl text-slate-500 mb-1">Description</label>
+                    <textarea type="text" name="description" id="description" class="bg-transparent focus:outline-none border-2 border-red-400 rounded-xl w-full px-2 py-1 text-slate-200 text-lg tracking-wider"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="add-btn text-slate-200 text-lg w-full bg-red-400 rounded-xl px-4 py-2 font-semibold hover:bg-red-300 hover:text-black">Add New To Basket</button>
+                </div>
+            </form>
+           </div>
+        </div>
+    </div>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
